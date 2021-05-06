@@ -11,9 +11,9 @@ const makeData = (year, month, dayStart, dayEnd, salespersonsArr) => {
     const periodDays = dayEnd - dayStart;
     for (let i = 0; i <= periodDays; i++) {
         let day = dayStart + i;
-        let sales = Math.round(Math.random() * 650 + 50);
+        let sales = Math.floor(Math.random() * 651 + 50);
         for (j = 0; j < sales; j++) {
-            let hour = Math.round(Math.random() * 10 + 8);
+            let hour = Math.floor(Math.random() * 11 + 8);
             let min = Math.round(Math.random() * 60);
             // Transform min to string
             if (min < 10) {
